@@ -34,7 +34,7 @@ summary(fref)
 boots <- 1:dim(dat1)[1]
 boot_list <- list()
 
-for (b in 1:2){
+for (b in 1:100){
 
   e <- sample(boots, size = length(boots), replace = TRUE)
   y.boot <- y[e]
